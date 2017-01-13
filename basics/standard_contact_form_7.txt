@@ -1,0 +1,28 @@
+Form:
+
+<label> Ihr Name:
+    [text* your-name] </label>
+
+<label> E-Mail-Adresse:
+    [email* your-email] </label>
+
+<label> Telefonnummer (bitte nur Ziffern):
+    [tel* tel-607]</label>
+
+<label> Ihre Mitteilung an uns:
+    [textarea* your-message] </label>
+
+[submit "Nachricht versenden"]
+
+----------------------------------------------------------------------------------------------
+
+Email:
+
+Diese E-Mail wurde von einem Kontaktformular von Reichwein Innenausbau Sanierung (http://reichwein-is.de/) gesendet
+
+
+----------------------------------------------------------------------------------------------
+
+On kontakt Page:!!!
+
+Sie möchten gerne ein unverbindliches Angebot, haben Wünsche, Fragen oder Anregungen? Bitte nehmen Sie Kontakt mit uns auf, wir melden uns schnellstmöglich bei Ihnen!
