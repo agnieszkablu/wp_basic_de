@@ -4,17 +4,6 @@
 /*
 ============ Header ===========
 */
-.navbar-brand{
-	max-width: 50%;
-	img{
-		//max-width: 100%;
-	}
-}
-.navbar-toggle{
-	img{
-		max-width: 70%;
-	}
-}
 
 /*
 ============ Section Main ===========
@@ -57,7 +46,10 @@
 ============ Section Footer ===========
 */
 .site-footer{
-	
+	color: $color__text-footer;	
+	font-family: $font__other;
+	text-align: center;
+	@include font-size($footer-font-sizes);
 	.site-info, .site-design{
 		
 	}
