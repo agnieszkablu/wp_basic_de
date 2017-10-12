@@ -1,4 +1,7 @@
 /*
+============ These scripts are added only to front page if it is not IE browser ===========
+*/
+/*
 ============ Smooth scrolling ===========
 */
 'use strict';
@@ -35,20 +38,3 @@ window.addEventListener('DOMMouseScroll', onMouseWheel);
 window.addEventListener('scroll', function () {
     return pos.current = window.scrollY;
 });
-/*
-============ AOSinit ===========
-*/
-new AOS({boxClass:'aos',animateClass: 'animated',offset:0,mobile:false, live: false}).init();
-
-/*
-============ Bootstrap additional functions ===========
-*/
-( function( $ ) {
-jQuery(function($) {
-	
-	//============ Remove classes  Bootstrap  ===========
-	
-	
-	$( '.contactSection img' ).removeClass( 'img-responsive center-block' );
-});
-} )( jQuery );
