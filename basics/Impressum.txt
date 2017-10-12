@@ -26,6 +26,9 @@ E-Mail:<a href="mailto:......."> ........</a><br>
 <td>....</td>
 </tr>
 <tr>
+<td></td>
+</tr>
+<tr>
 <td><strong>Design &amp; Umsetzung:</strong></td>
 <td><address>Daniel Hernandez<br>
 Rembrücker Straße 1<br>

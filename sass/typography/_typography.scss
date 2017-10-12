@@ -1,12 +1,26 @@
 @import "headings";
-body,
-button,
-input,
-select,
-textarea {
+//Responsive font sizes from bootstrap
+html {
+  font-size: 13px;
+}
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 15px;
+  }
+}
+body {
 	color: $color__text-main;
 	font-family: $font__main;
-	@include font-size($p-font-sizes);
+	//@include font-size($p-font-sizes);
 	line-height: $font__line-height-body;
-	font-weight: 400;
+	font-weight: 300;
+}
+.page-impressum,
+.page-datenschutz{
+	text-align: justify;
+	table{
+		p{
+			text-align: left;
+		}
+	}
 }

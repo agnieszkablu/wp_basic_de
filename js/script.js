@@ -27,7 +27,9 @@
 	
 	//$( '.site-content img' ).not( '.img-responsive ' ).addClass( 'img-responsive center-block' );
 
-
+$(document).ready(function() {
+	$('.soliloquy-container .soliloquy-image').animate({opacity: 1}, 1000);//.fadeIn(8500);
+});
 
 	
 })( jQuery );

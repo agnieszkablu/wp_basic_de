@@ -134,18 +134,23 @@ add_action( 'widgets_init', 'sfp_widgets_init' );
 function sfp_scripts() {
 	wp_enqueue_style( 'sfp-style', get_stylesheet_uri() );
 	
-
-	wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js', array(), '1.0.0', true);
+	wp_enqueue_script('popper-for-bootstrap', get_template_directory_uri().'/bower_components/popper.js/dist/umd/popper.min.js', array(), false, true);
 	
+	wp_enqueue_script('tether-for-bootstrap', get_template_directory_uri()."/bower_components/tether/dist/js/tether.min.js", array(), false, true);
+	
+	wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/bower_components/bootstrap/dist/js/bootstrap.min.js', array(), '1.0.0', true);
+
 	
 	wp_enqueue_script('customscript', get_template_directory_uri().'/dist/js/script.min.js', array(), '1.0.0', true);
 	
 	 // For Internet Explorer, bcs smooth Scrolling doesn't work on IE <= 10
     global $is_IE;
     if( $is_IE ) {
-        //wp_enqueue_style('cssIE', get_template_directory_uri().'/css/ie.css', array(), '1.0.0');
+       // wp_enqueue_style('cssIE', get_template_directory_uri().'/dist/css/ie.css', array(), '1.0.0');
     }else{
-		//wp_enqueue_script('scriptsfront', get_template_directory_uri().'/js/scripts-front.js', array(), '1.0.0', true);
+			//wp_enqueue_script('wowscript', get_template_directory_uri().'/dist/js/wow.min.js', array(), '1.0.0', true);
+			
+			//wp_enqueue_script('scriptsfront', get_template_directory_uri().'/dist/js/scripts-front.js', array(), '1.0.0', true);
 	}
 	
 

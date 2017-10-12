@@ -2,9 +2,9 @@
   "name": "sfp",
   "description": "Custom wordpress theme. Based on _undersores and bootstrap, developed with Yoeman and Grunt",
   "keywords": [
-   	"wordpress",
-	"bootstrap",
-	"starter theme"
+    "wordpress",
+  "bootstrap",
+  "starter theme"
   ],
   "license": "MIT",
   "homepage": "",
@@ -15,7 +15,6 @@
     "bower_components"
   ],
   "dependencies": {
-    "bootstrap-sass": "^3.3.6",
-    "font-awesome": "Font-Awesome#^4.5.0"
+    "bootstrap": "bootstrap#v4.0.0-alpha.6"
   }
 }
