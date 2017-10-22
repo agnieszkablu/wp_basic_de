@@ -56,7 +56,7 @@
 					  <span class="sr-only">Toggle navigation</span>
 					  MENU
 					</button>
-					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/img/logo.png" alt="Logo image sfp"></a>
+					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/dist/img/logo.png" alt="Logo image sfp"></a>
 				  </div>
 				  <div id="navbar" class="navbar-collapse collapse ">
 					<?php 

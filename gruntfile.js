@@ -110,7 +110,6 @@ module.exports = function( grunt ) {
 			},
 			init: {
 				src: [
-					'bower.json',
 					'layouts/*.php',
 					'inc/*.php',
 					'custom-pages/*.php',
@@ -184,6 +183,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-contrib-imagemin' );
 	grunt.loadNpmTasks('grunt-newer');
 	grunt.loadNpmTasks('grunt-browser-sync');	
+	grunt.loadNpmTasks('grunt-npm-install');
 
 	grunt.registerTask( 'scripts', [
 		'clean:scripts',
@@ -211,20 +211,7 @@ module.exports = function( grunt ) {
 
 	grunt.registerTask( 'setup', [
 		'replace:init',
-		'bower-install',
+		'npm-install:bootstrap@4.0.0-beta.2',
 		'build'
 	]);
-
-	grunt.registerTask( 'bower-install', function() {
-		var done = this.async();
-		var bower = require( 'bower' ).commands;
-		bower.install().on( 'end', function( data ) {
-			done();
-		}).on( 'data', function( data ) {
-			console.log( data );
-		}).on( 'error', function( err ) {
-			console.error( err );
-			done();
-		});
-	});
 };
